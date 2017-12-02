@@ -5,6 +5,9 @@
     <js-module name="CordovaMqTTPlugin" src="www/cordova-plugin-mqtt.js">
         <clobbers target="cordova.plugins.CordovaMqTTPlugin" />
     </js-module>
+    <js-module name="MQTTEmitter" src="www/MQTTEmitter.js">
+        <clobbers target="ME" />
+    </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="CordovaMqTTPlugin">
