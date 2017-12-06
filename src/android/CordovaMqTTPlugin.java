@@ -120,6 +120,8 @@ public class CordovaMqTTPlugin extends CordovaPlugin {
             }
             connOpts.setCleanSession(cleanSess);
             connOpts.setKeepAliveInterval(ka);
+            //自动重连
+            connOpts.setAutomaticReconnect(true);
             Log.i("mqttalabs", "username " + uname +" . Password is " + pass);
 
             client = new MqttAsyncClient(url, cid, persistence);
